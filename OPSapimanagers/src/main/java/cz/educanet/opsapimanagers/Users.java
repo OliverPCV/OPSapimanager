@@ -2,11 +2,15 @@ package cz.educanet.opsapimanagers;
 
 
 public class Users {
+    private String fullname;
     private String username;
+    private String email;
     private String password;
 
-    public Users(String username, String password){
+    public Users( String fullname, String username, String email,  String password){
+        this.fullname = fullname;
         this.username = username;
+        this.email = email;
         this.password = password;
     }
 
