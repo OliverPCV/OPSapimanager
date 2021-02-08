@@ -24,6 +24,7 @@ public class UsersResource {
     }
 
     @POST
+    @Path("register")
     public Response createUser(
             @FormParam("fullname") String fullname,
             @FormParam("username") String username,
@@ -31,13 +32,15 @@ public class UsersResource {
             @FormParam("password") String password
     ) {
         Users user = new Users(fullname, username, email, password);
-        if (userManager.doesUserExist(username)) {
+        return  Response.ok(user).build();
+
+        /*if (userManager.doesUserExist(username)) {
             return Response.status(Response.Status.BAD_REQUEST).entity("user už existuje").build();
 
         } else {
             userManager.saveUser(user);
             return Response.ok("Registered").build();
-        }
+        }*/
     }
 
     @POST
@@ -56,6 +59,7 @@ public class UsersResource {
     }
 
     @GET
+    @Path("logged")
     public Response getLoggedUser(){
         return Response.ok(loginManager.loggedUser).build();
     }

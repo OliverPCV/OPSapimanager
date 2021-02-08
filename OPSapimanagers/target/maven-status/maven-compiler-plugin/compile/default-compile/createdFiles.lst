@@ -1,4 +1,5 @@
+cz\educanet\opsapimanagers\LoginManager.class
 cz\educanet\opsapimanagers\UsersManager.class
-cz\educanet\opsapimanagers\ApiConfig.class
+cz\educanet\opsapimanagers\JAXRSConfig.class
 cz\educanet\opsapimanagers\Users.class
 cz\educanet\opsapimanagers\UsersResource.class
