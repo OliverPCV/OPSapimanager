@@ -23,10 +23,8 @@ public class Users {
 
     public String changeUsername(String newUsername){
         return this.username = newUsername;
-
     }
     public String changePassword(String newPassword){
         return this.username = newPassword;
-
     }
 }

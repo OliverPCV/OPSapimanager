@@ -20,7 +20,7 @@ public class UsersResource {
 
     @GET
     public Response getUsers() {
-        return Response.ok(userManager).build();
+        return Response.ok(userManager.getAll()).build();
     }
 
     @POST
